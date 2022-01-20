@@ -2,11 +2,13 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Copyright from './Copyright'
-
+import '../index.css'
 
 function Display({type, level, name, description, image}){
 
-    return(<Card>
+    return(
+    <div className='shadow'>
+    <Card style={{backgroundColor: "Orange"}}>
         
         <CardContent>
         <h4>{type}</h4>
@@ -20,7 +22,7 @@ function Display({type, level, name, description, image}){
             <Copyright />
         </CardContent>
     </Card>
-
+</div>
 
 
 
